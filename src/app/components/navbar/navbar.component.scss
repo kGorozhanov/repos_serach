@@ -1,0 +1,15 @@
+.navbar-info-wrapper{
+  flex-basis: 100%  ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .user-info{
+    display: flex;
+    align-items: center;
+    .avatar{
+      margin-left: 15px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+}

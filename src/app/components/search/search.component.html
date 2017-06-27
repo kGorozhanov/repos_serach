@@ -1,0 +1,19 @@
+<div class="search-card-wrapper">
+  <md-card>
+    <md-card-title class="search-card-title">
+      Welcome to github repo search!
+    </md-card-title>
+    <md-card-content>
+      <md-input-container class="md-block">
+        <input mdInput placeholder="Enter a user name" [mdAutocomplete]="auto" [formControl]="user">
+      </md-input-container>
+
+      <md-autocomplete #auto="mdAutocomplete" [displayWith]="displayFn">
+        <md-option *ngFor="let user of users | async" [value]="user">
+          {{ user.login }}
+        </md-option>
+      </md-autocomplete>
+    </md-card-content>
+  </md-card>
+</div>
+<router-outlet></router-outlet>

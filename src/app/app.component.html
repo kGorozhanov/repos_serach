@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<div class="app-loading"
+     *ngIf="showLoading | async">
+  <md-progress-bar mode="indeterminate"></md-progress-bar>
+</div>
+<router-outlet></router-outlet>

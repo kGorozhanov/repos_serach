@@ -1,0 +1,15 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  overflow: auto;
+  .app-loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .mat-progress-bar {
+      height: 3px;
+    }
+  }
+}

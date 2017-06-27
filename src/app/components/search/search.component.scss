@@ -1,0 +1,15 @@
+:host{
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  align-items: center;
+  .search-card-wrapper{
+    margin-top: 10%;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 15px;
+    .search-card-title{
+      text-align: center;
+    }
+  }
+}

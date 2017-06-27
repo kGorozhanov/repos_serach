@@ -1,0 +1,13 @@
+<md-toolbar color="primary">
+  <div class="navbar-info-wrapper">
+    <button md-icon-button (click)="back.emit()">
+      <md-icon class="material-icons">&#xE5C4;</md-icon>
+    </button>
+    <div class="user-info" *ngIf="user">
+      <span>{{user.login}}</span>
+      <img [src]="user.avatar_url"
+           class="avatar"
+           alt="avatar">
+    </div>
+  </div>
+</md-toolbar>
